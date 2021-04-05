@@ -8,15 +8,15 @@ Average number of strokes for a size of 500: 5600 (may drop below 5500 in rare c
 
 bash
 make
-ARG=`ruby -e "puts (1..500).to_a.shuffle.join(' ')"`; ./push_swap $ARG | ./checker $ARG
+ARG=\`ruby -e "puts (1..500).to_a.shuffle.join(' ')"\`; ./push_swap $ARG | ./checker $ARG
 
 The -f option with push_swap and checker allows to write/read instructions in a file.
-ARG=`ruby -e "puts (1..500).to_a.shuffle.join(' ')"`; ./push_swap -f file $ARG ; ./checker -f file $ARG
+ARG=\`ruby -e "puts (1..500).to_a.shuffle.join(' ')"\`; ./push_swap -f file $ARG ; ./checker -f file $ARG
 
 The -v option with checker allows you to display the status of the stacks each time.
-ARG=`ruby -e "puts (1..500).to_a.shuffle.join(' ')"`; ./push_swap $ARG | ./checker -v $ARG
+ARG=\`ruby -e "puts (1..500).to_a.shuffle.join(' ')"\`; ./push_swap $ARG | ./checker -v $ARG
 
 The -c option with checker displays the last instruction in color (goes with the -v option).
-ARG=`ruby -e "puts (1..500).to_a.shuffle.join(' ')"`; ./push_swap $ARG | ./checker -v -c $ARG
+ARG=\`ruby -e "puts (1..500).to_a.shuffle.join(' ')"\`; ./push_swap $ARG | ./checker -v -c $ARG
 
 -cvf works fine.
