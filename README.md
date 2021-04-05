@@ -1,7 +1,7 @@
 # PUSH_SWAP
 42's project PUSH_SWAP
-The algorithm used for size <= 16 is kind of insertion sort.
-The algorithm used for size > 16 is kind of quicksort, suitable for the stacks used in this project.
+The algorithm used for size > 3 && <= 15 is kind of insertion sort.
+The algorithm used for size > 15 is kind of quicksort, suitable for the stacks used in this project.
 This project should not be used as a reference because it is not optimized.
 Average number of strokes for a size of 100: 680 (can go above 700 in rare cases).
 Average number of strokes for a size of 500: 5600 (may drop below 5500 in rare cases).
