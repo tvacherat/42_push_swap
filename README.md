@@ -7,7 +7,7 @@ Average number of strokes for a size of 100: 680 (can go above 700 in rare cases
 Average number of strokes for a size of 500: 5600 (may drop below 5500 in rare cases).
 
 In bash:
-make \n
+make
 ARG=\`ruby -e "puts (1..500).to_a.shuffle.join(' ')"\`; ./push_swap $ARG | ./checker $ARG`
 
 The -f option with push_swap and checker allows to write/read instructions in a file.
